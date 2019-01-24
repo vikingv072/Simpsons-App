@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CharModel" representedClassName=".CharModel" syncable="YES">
+        <attribute name="firstURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="result" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Favorites" representedClassName=".Favorites" syncable="YES">
+        <attribute name="favFirstURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="favResult" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="charmodel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CharModel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CharModel" positionX="-259.3984375" positionY="-121.34375" width="128" height="105"/>
+        <element name="Favorites" positionX="-63" positionY="9" width="128" height="118"/>
+    </elements>
+</model>
